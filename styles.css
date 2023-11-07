@@ -24,7 +24,7 @@ html {
     background-size: cover;
 }
 
-.left-side>.logo {
+.left-side>.sidebar {
     position: relative;
     top: 20%;
     display: flex;
@@ -35,19 +35,19 @@ html {
 
 }
 
-.left-side>.logo>img {
+.left-side>.sidebar>img {
     height: 80%;
 }
 
-.left-side>.logo>.logo-text {
+.left-side>.sidebar>.logo-text {
     color: white;
     font-family: "norse-bold", Arial, Helvetica, sans-serif;
     font-size: 7rem;
 }
 
-.left-side>footer {
+.left-side>.footer {
     position: relative;
-    bottom: -75%;
+    top: 75%;
     text-align: center;
     color: black;
     font-size: 1rem;
@@ -57,7 +57,42 @@ html {
 .right-side {
     width: 60%;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+
+.right-side>.header {
+    height: 30%;
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+    box-sizing: border-box;
+    padding-left: 5%;
+    padding-top: 3%;
+}
+
+.right-side>.header>p {
+    width: 55ch;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.right-side>.content {
+    height: 40%;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 5%;
+}
+
+.right-side>.footer {
+    height: 30%;
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+    box-sizing: border-box;
+    padding-left: 5%;
+}
+
+
+
 
 /*
 @media only screen and (max-width: 600px) {
