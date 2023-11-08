@@ -10,30 +10,87 @@
 </head>
 
 <body>
-    <div class="main">
-        <div class="left-side">
-            <div class="sidebar">
-                <img src="images/odin-lined.png" alt="The Odin Project logo">
-                <p class="logo-text">ODIN</p>
-            </div>
-            <div class="footer">
-                Photo by <a
-                    href="https://unsplash.com/@intellopunk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Illia
-                    Plakhuta</a> on <a
-                    href="https://unsplash.com/photos/a-large-swimming-pool-next-to-the-ocean-V1gfvXw1g7I?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-            </div>
+
+    <div class="left-side">
+        <div class="sidebar">
+            <img src="images/odin-lined.png" alt="The Odin Project logo">
+            <p class="logo-text">ODIN</p>
         </div>
-        <div class="right-side">
-            <div class="header">
-                <p class="para1">This is not a real online service! You know you need something
-                    like this in your life to help you realize your deepest dreams.<br>
-                    Sign up now to get started.
-                </p>
-                <p class="para2">You know you want to.</p>
-            </div>
-            <div class="content"></div>
-            <div class="footer"></div>
+        <div class="footer">
+            Photo by <a
+                href="https://unsplash.com/@intellopunk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Illia
+                Plakhuta</a> on <a
+                href="https://unsplash.com/photos/a-large-swimming-pool-next-to-the-ocean-V1gfvXw1g7I?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
         </div>
+    </div>
+    <div class="right-side">
+        <div class="header">
+            <p class="para1">This is not a real online service! You know you need something
+                like this in your life to help you realize your deepest dreams.<br>
+                Sign up now to get started.
+            </p>
+            <p class="para2">You know you want to.</p>
+        </div>
+        <div class="content">
+            <p class="title">Let's do this!</p>
+            <p>Required fields are followed by
+                <strong><span aria-label="required">*</span></strong>
+            </p>
+            <form action="" method="" id="new_account">
+                <section>
+                    <p>
+                        <label for="first_name">
+                            <span>FIRST NAME</span>
+                            <strong><span aria-label="required">*</span></strong>
+                        </label>
+                        <input type="text" id="first_name" name="user_first_name" required size="35">
+                        <span></span>
+                    </p>
+                    <p>
+                        <label for="last_name">
+                            <span>LAST NAME</span>
+                            <strong><span aria-label="required">*</span></strong>
+                        </label>
+                        <input type="text" id="last_name" name="user_last_name" required size="35">
+                    </p>
+                    <p>
+                        <label for="email">
+                            <span>EMAIL</span>
+                            <strong><span aria-label="required">*</span></strong>
+                        </label>
+                        <input type="email" id="email" name="user_email" required size="35">
+                    </p>
+                    <p>
+                        <label for="phone_number">
+                            <span>PHONE NUMBER</span>
+                        </label>
+                        <input type="tel" id="phone_number" name="user_phone_number" size="35">
+                    </p>
+                    <p>
+                        <label for="password">
+                            <span>PASSWORD</span>
+                            <strong><span aria-label="required">*</span></strong>
+                        </label>
+                        <input type="password" id="password" name="user_password" required size="35">
+                        <span class="psw_check"></span>
+                    </p>
+                    <p>
+                        <label for="confirm_password">
+                            <span>CONFIRM PASSWORD</span>
+                            <strong><span aria-label="required">*</span></strong>
+                        </label>
+                        <input type="password" id="confirm_password" name="user_password" required size="35">
+                    </p>
+                </section>
+            </form>
+        </div>
+        <div class="footer">
+            <div>
+                <button type="submit" form="new_account">Create Account</button>
+            </div>
+            <p>Already have an account? <a href="">Log in</a></p>
+        </div>
+    </div>
     </div>
 </body>
 
