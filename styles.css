@@ -72,8 +72,6 @@ body {
 }
 
 .right-side>.content {
-    min-height: auto;
-    width: 100%;
     background-color: white;
     box-sizing: border-box;
     padding-left: 5%;
@@ -97,26 +95,23 @@ section p {
 }
 
 input {
-    /* border-color: #E5E7EB; */
+    border-color: #E5E7EB;
     border-radius: 5px;
     padding: 5px;
+    width: 40ch;
 }
 
-input:valid {
+/* input:valid {
     border-color: rgb(0, 191, 255);
 }
 
 input:invalid {
     border-color: red;
-}
+} */
 
 input:focus {
     border-color: rgb(0, 191, 255);
     outline: none;
-}
-
-.psw_check {
-    color: red;
 }
 
 .right-side>.footer {

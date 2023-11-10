@@ -43,7 +43,8 @@
                             <span>FIRST NAME</span>
                             <strong><span aria-label="required">*</span></strong>
                         </label>
-                        <input type="text" id="first_name" name="user_first_name" required size="35">
+                        <input type="text" id="first_name" class="input" name="user_first_name" required
+                            pattern="[a-zA-z]+" placeholder="John">
                         <span></span>
                     </p>
                     <p>
@@ -51,36 +52,45 @@
                             <span>LAST NAME</span>
                             <strong><span aria-label="required">*</span></strong>
                         </label>
-                        <input type="text" id="last_name" name="user_last_name" required size="35">
+                        <input type="text" id="last_name" class="input" name="user_last_name" required
+                            pattern="[a-zA-z]+" placeholder="Smith">
                     </p>
                     <p>
                         <label for="email">
                             <span>EMAIL</span>
                             <strong><span aria-label="required">*</span></strong>
                         </label>
-                        <input type="email" id="email" name="user_email" required size="35">
+                        <input type="email" id="email" class="input" name="user_email" required
+                            placeholder="abc@mail.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
                     </p>
                     <p>
                         <label for="phone_number">
                             <span>PHONE NUMBER</span>
                         </label>
-                        <input type="tel" id="phone_number" name="user_phone_number" size="35">
+                        <input type="tel" id="phone_number" class="input" name="user_phone_number"
+                            pattern="[0-9]{3,15}">
                     </p>
                     <p>
                         <label for="password">
                             <span>PASSWORD</span>
                             <strong><span aria-label="required">*</span></strong>
                         </label>
-                        <input type="password" id="password" name="user_password" required size="35">
-                        <span class="psw_check"></span>
+                        <input type="password" id="password" class="input" name="user_password" required
+                            onkeyup="check();"
+                            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$">
                     </p>
                     <p>
                         <label for="confirm_password">
                             <span>CONFIRM PASSWORD</span>
                             <strong><span aria-label="required">*</span></strong>
                         </label>
-                        <input type="password" id="confirm_password" name="user_password" required size="35">
+                        <input type="password" id="confirm_password" class="input" name="user_password" required
+                            onkeyup="check();"
+                            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$">
+                        <span id="psw_check"></span>
                     </p>
+                    <p class="note">Password must contain minimum six characters, at least one uppercase letter,
+                        one lowercase letter, one number and one special character (@$!%*?&).</p>
                 </section>
             </form>
         </div>
