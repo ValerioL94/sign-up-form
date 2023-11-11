@@ -81,7 +81,7 @@ html {
 form {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 100px;
+    column-gap: 10%;
 }
 
 form p {
@@ -133,7 +133,6 @@ a {
     color: rgb(15, 107, 138);
 }
 
-
 @media only screen and (max-width: 768px) {
     .container {
         display: flex;
@@ -142,15 +141,15 @@ a {
 
     .left-side {
         min-height: 40vh;
-        min-width: 100vw;
+        min-width: 100%;
     }
 
     .right-side {
         min-height: 60vh;
-        min-width: 100vw;
+        min-width: 100%;
     }
 
     form p {
-        width: 80%;
+        width: 70%;
     }
 }
