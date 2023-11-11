@@ -32,7 +32,6 @@ html {
     align-items: center;
     height: 20vh;
     background: rgba(0, 0, 0, 0.3);
-
 }
 
 .left-side>.sidebar>img {
@@ -42,7 +41,7 @@ html {
 .left-side>.sidebar>.logo-text {
     color: white;
     font-family: "norse-bold", Arial, Helvetica, sans-serif;
-    font-size: 7vw;
+    font-size: 6em;
 }
 
 .left-side>.footer {
@@ -51,7 +50,7 @@ html {
     text-align: center;
     color: black;
     font-size: clamp(1rem 1.5vw 1.5rem);
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .right-side {
@@ -68,7 +67,6 @@ html {
 }
 
 .right-side>.header>p {
-    max-width: (75ch);
     font-size: clamp(1rem, 1.5vw, 1.5rem);
     font-weight: 600;
 }
@@ -127,12 +125,12 @@ button {
 }
 
 .right-side>.footer>p {
-    font-weight: bolder;
+    font-weight: 600;
 }
 
 a {
     text-decoration: none;
-    color: rgb(38, 129, 160);
+    color: rgb(15, 107, 138);
 }
 
 
