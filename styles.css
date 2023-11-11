@@ -8,60 +8,72 @@ html {
     border: 0;
     padding: 0;
     margin: 0;
+    height: 100%;
 }
 
 .container {
     display: flex;
-    min-height: 100vh;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 .left-side {
-    position: relative;
     display: flex;
     flex-direction: column;
-    width: 40%;
+    flex: 1;
     background-image: url(images/illia-plakhuta-V1gfvXw1g7I-unsplash.jpg);
     background-size: cover;
 }
 
-.left-side>.sidebar {
-    position: relative;
-    top: 20%;
+.left-side>.content {
+    flex: 3;
+    display: flex;
+    align-items: center;
+}
+
+.left-side>.content>.sidebar {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20vh;
+    height: 30%;
+    width: 100%;
     background: rgba(0, 0, 0, 0.3);
 }
 
-.left-side>.sidebar>img {
+.left-side>.content>.sidebar>.logo {
     height: 80%;
 }
 
-.left-side>.sidebar>.logo-text {
+.left-side>.content>.sidebar>.logo-text {
     color: white;
     font-family: "norse-bold", Arial, Helvetica, sans-serif;
     font-size: 6em;
 }
 
 .left-side>.footer {
-    position: absolute;
-    inset: auto 15% 3% 15%;
-    text-align: center;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: flex-end;
     color: black;
-    font-size: clamp(1rem 1.5vw 1.5rem);
+    font-size: 1.5em;
     font-weight: 700;
 }
 
+.left-side>.footer>p {
+    text-align: center;
+}
+
 .right-side {
-    width: 60%;
     background-color: rgb(245, 245, 245);
     display: flex;
+    flex: 2;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 .right-side>.header {
-    max-height: 30%;
+    flex: 1;
     box-sizing: border-box;
     padding: 5%;
 }
@@ -72,7 +84,7 @@ html {
 }
 
 .right-side>.content {
-    min-height: 40%;
+    flex: 2;
     background-color: white;
     box-sizing: border-box;
     padding: 0 5%;
@@ -108,7 +120,7 @@ input:focus {
 }
 
 .right-side>.footer {
-    max-height: 30%;
+    flex: 1;
     box-sizing: border-box;
     padding-left: 5%;
 }
@@ -135,18 +147,19 @@ a {
 
 @media only screen and (max-width: 768px) {
     .container {
-        display: flex;
         flex-direction: column;
     }
 
-    .left-side {
-        min-height: 40vh;
-        min-width: 100%;
+    .left-side>.content>.sidebar>.logo {
+        height: 15vh;
     }
 
-    .right-side {
-        min-height: 60vh;
-        min-width: 100%;
+    .left-side>.content>.sidebar>.logo-text {
+        font-size: 4em;
+    }
+
+    .left-side>.footer {
+        font-size: 1em;
     }
 
     form p {
