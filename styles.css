@@ -34,21 +34,32 @@ html {
 .left-side>.content>.sidebar {
     display: flex;
     justify-content: center;
-    align-items: center;
     height: 30%;
     width: 100%;
     background: rgba(0, 0, 0, 0.3);
 }
 
-.left-side>.content>.sidebar>.logo {
+.left-side>.content>.sidebar>a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.left-side>.content>.sidebar>a>.logo {
     height: 80%;
 }
 
-.left-side>.content>.sidebar>.logo-text {
+.left-side>.content>.sidebar>a>.logo-text {
     color: white;
     font-family: "norse-bold", Arial, Helvetica, sans-serif;
     font-size: 6em;
 }
+
+/* 
+.left-side>.content>.sidebar>a {
+    color: white;
+} */
+
 
 .left-side>.footer {
     display: flex;
@@ -145,17 +156,21 @@ a {
     color: rgb(15, 107, 138);
 }
 
+
+
 @media only screen and (max-width: 768px) {
     .container {
         flex-direction: column;
     }
 
-    .left-side>.content>.sidebar>.logo {
+    .left-side>.content>.sidebar>a {
+        display: flex;
+        align-items: center;
         height: 15vh;
     }
 
-    .left-side>.content>.sidebar>.logo-text {
-        font-size: 4em;
+    .left-side>.content>.sidebar>a>.logo-text {
+        font-size: 4.5em;
     }
 
     .left-side>.footer {
